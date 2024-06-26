@@ -10,6 +10,9 @@
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio"
   },
+  "resolutions": {
+    "react": "^18.0.0"
+  },  
   "dependencies": {
     "@clerk/nextjs": "^5.1.6",
     "@google/generative-ai": "^0.13.0",
