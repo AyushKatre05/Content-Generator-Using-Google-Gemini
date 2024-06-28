@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import Head from 'next/head';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
