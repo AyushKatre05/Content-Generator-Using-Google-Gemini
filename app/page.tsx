@@ -27,7 +27,7 @@ const Home = () => {
         </p>
         <p className="text-lg mt-2 text-center max-w-2xl">
           Our AI Content Generator is perfect for content creators, marketers, and businesses looking to scale their content production. 
-          With our easy-to-use interface, you can customize your content to match your brand's voice and style.
+          With our easy-to-use interface, you can customize your content to match your brands voice and style.
         </p>
         <Button 
           onClick={handleGetStarted} 
