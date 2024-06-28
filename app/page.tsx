@@ -1,6 +1,5 @@
 "use client"
 import { useRouter } from 'next/navigation';
-import Head from 'next/head';
 import { Button } from '@/components/ui/button';
 
 const Home = () => {
@@ -12,11 +11,11 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex flex-col items-center justify-center text-white">
-      <Head>
-        <title className='text-center'>AI Content Generator</title>
-        <meta name="description" content="Generate high-quality content effortlessly with our AI-powered tool" />
-      </Head>
-      <main className="w-full flex flex-col items-center justify-center px-4 py-8">
+      <div>
+        <div className='text-center'>AI Content Generator</div>
+        <div>Generate high-quality content effortlessly with our AI-powered tool </div>
+      </div>
+      <div className="w-full flex flex-col items-center justify-center px-4 py-8">
         <h1 className="text-5xl font-bold mt-4">AI Content Generator</h1>
         <p className="text-lg mt-2 text-center max-w-2xl">
           Welcome to the AI Content Generator, your ultimate solution for creating high-quality content effortlessly. 
@@ -36,7 +35,7 @@ const Home = () => {
         >
           Get Started
         </Button>
-      </main>
+      </div>
     </div>
   );
 };

@@ -1,4 +1,20 @@
-export default [
+
+interface Template {
+    name: string;
+    desc: string;
+    category: string;
+    icon: string;
+    aiPrompt: string;
+    slug: string;
+    form: {
+      label: string;
+      field: string;
+      name: string;
+      required: boolean;
+    }[];
+  }
+
+const templates: Template[] =  [
     {
         name: 'Ad Copy Generator',
         desc: 'An AI tool that creates engaging ad copies for your campaigns.',
@@ -576,3 +592,4 @@ export default [
         ]
     },
 ]
+export default templates;
