@@ -13,7 +13,7 @@ interface PROPS {
   loading:boolean
 }
 
-const FormSection = ({ selectTemplate,userFormInput,loading }: PROPS) => {
+const FormSection = ({ selectTemplate,userFormInput }: PROPS) => {
     
     const [formData,setFormData] = useState<any>();
     const handleInputChange=(e:any)=>{
@@ -43,7 +43,7 @@ const FormSection = ({ selectTemplate,userFormInput,loading }: PROPS) => {
              : null}
           </div>
         ))}
-        <Button type="submit" disabled={loading} className="w-full py-6" >{loading&&<Loader2Icon className="animate-spin"/>} Generate Content</Button>
+        <Button type="submit" className="w-full py-6" > Generate Content</Button>
       </form>
     </div>
   );
